@@ -1,178 +1,738 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="description" content="Responsive Bootstrap App Landing Page Template">
+<meta name="keywords" content="Kane, Bootstrap, Landing page, Template, App, Mobile, Android, iOS">
+<meta name="author" content="Mizanur Rahman">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta charset="utf-8" />
-	<title>Phatpen</title>
+<!-- SITE TITLE -->
+<title>Phatpen</title>
 
-	<meta name="robots" content="">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- =========================
+      FAV AND TOUCH ICONS
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<!--[if lt IE 9]>
-	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<!-- =========================
+     STYLESHEETS
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<!-- This file is part of a site template for sale at themeforest.net.
-    See: http://themeforest.net/user/Dilipkumar
-    Copyright 2013 Dilip Kumar -->
+<!-- FONT ICONS -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
 
-	<!-- CSS Files -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="css/foundation.css"/>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="css/ico.css"/>
-	<link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
 
-	<!-- FAVICON-->
-	<link rel="shortcut icon" href="images/favicon.ico">
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 
-	<!-- Google Webfont -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
 
-	<!-- jQuery Files -->
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="js/contact.js"></script>
-	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
-	<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-	<script type="text/javascript" src="js/jquery.nav.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/green.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/green.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </head>
+
 <body>
+<!-- =========================
+     PRE LOADER
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+
+<!-- =========================
+     HEADER
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+
+			</div>
+
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#brief1">Why Us?</a></li>
+					<li><a href="#screenshot-section">Screenshots</a></li>
+					<li><a href="#download">Download</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
 
 
+	<!-- CONTAINER -->
+	<div class="container">
 
-<!-- Slider section -->
-<section id="top">
-	<div class="row">
-		<div class="twelve columns">
-			<div class="space30"></div>
-
-			<!-- Slider content -->
-			<div class="six columns">
-				<div id="main-slider" class="flexslider">
-					<ul class="slides">
-						<li><img src="demo/slide/1.png" alt="" /></li>
-					</ul>
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<img src="images/logo.png" alt="">
 				</div>
 			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
 
-			<!-- Content right -->
-			<div class="six columns top-info">
-				<h3>The perfect Mobile <span>Trading Platform</span></h3>
-				<p> "Trade overtop of the article you are reading without leaving the page! Phatpen can identify company names and currency symbols on any page and prepare your trade!" </p>
-				<div class="space50"></div>
-				<a class="btn" href="#"><span><i class="icon-iphone"></i></span>Available in<em>App Store</em></a>
+		<div class="row home-contents">
+			<div class="col-md-6 col-sm-6">
+
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">Introducing The Perfect Mobile Trading App.</h1>
+
+
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+
+						<a href="#download" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Download App</a>
+
+					</div>
+					<!-- /END BUTTONS -->
+
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
 
 			</div>
+
+
+			<div class="col-md-6 col-sm-6 hidden-xs">
+
+			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+			    <div class="phone-image">
+			    <img src="images/2-iphone-right.png" class="img-responsive" alt="">
+			    </div>
+
+			</div>
+
+		</div>
+		<!-- /END ROW -->
+
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+<!-- =========================
+     FEATURES
+============================== -->
+<section class="features" id="features">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+
+		<!-- SECTION TITLE -->
+		<h2 class="white-text">About Phatpen</h2>
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			~Don't miss the early profit entry...time is money!~
+		</div>
+		<div class="colored-line">
 		</div>
 	</div>
+	<!-- /END SECTION HEADER -->
+
+
+	<div class="row">
+
+		<!-- FEATURES LEFT -->
+		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_map_alt"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Powered</h4>
+					<p>
+						 Phatpen is powered by the patented TTAGIT technology platform.
+					</p>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_gift_alt"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Identify</h4>
+					<p>
+						 Phatpen can identify company names and currency symbols on any page and prepare your trade from the page you are reading
+					</p>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_tablet"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Social Channels</h4>
+					<p>
+						 Phatpen also brings up relevant mentions across social channels relating to the article you are reading.
+					</p>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+		</div>
+		<!-- /END FEATURES LEFT -->
+
+		<!-- PHONE IMAGE -->
+		<div class="col-md-4 col-sm-4">
+			<div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+				<img src="images/single-iphone.png" alt="">
+			</div>
+		</div>
+
+		<!-- FEATURES RIGHT -->
+		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_genius"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Time is Money</h4>
+					<p>
+						 from the time you read a breaking news story to placing your trade, you may have missed the early profit entry
+					</p>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_lightbulb_alt"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Trade over top</h4>
+					<p>
+						 Phatpen lets you trade overtop of the article you are reading without leaving the page.
+					</p>
+				</div>
+
+			</div>
+
+			<!-- /END SINGLE FEATURE -->
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_ribbon_alt"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Cross Platform</h4>
+					<p>
+						 Works on Mobile and Desktop Browser extensions, Plugins and Add-ons so it is part of your browsing experience.
+					</p>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+		</div>
+		<!-- /END FEATURES RIGHT -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
 </section>
-<!-- Slider section -->
+<!-- /END FEATURES SECTION -->
 
-<!-- Features/services section -->
-<section id="quote">
+
+<!-- =========================
+     BRIEF LEFT SECTION
+============================== -->
+<section class="app-brief deep-dark-bg" id="brief1">
+
+<div class="container">
+
 	<div class="row">
-		<div class="twelve columns">
-				<h3><i class="icon-barchartasc"></i>About Phatpen</h3>
-				<p>Phatpen is powered by the patented TTAGIT technology platform. Phatpen lets you trade overtop of the article you are reading without leaving the page.
 
-Phatpen can identify company names and currency symbols on any page and prepare your trade from the page you are reading.
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/2-iphone-left.png" alt="">
+			</div>
+		</div>
 
-Phatpen also brings up relevant mentions across social channels relating to the article you are reading.
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
-Switching views is a pain when trading and surfing the Internet. Making trades while reading an article online involves changing tabs or even going to applications which distracts from the content of the page you have been focused on reading. And from the time you read a breaking news story to placing your trade, you may have missed the early profit entry. Time is money!</p>
+			<!-- SECTION TITLE -->
+			<h2 class="white-text">Partnered with Questrade</h2>
+
+			<div class="colored-line-left">
+			</div>
+
+			<p>
+				Phatpen has partnered with Questrade to make the perfect mobile trading platform possible. In order to use Phatpen you must first have a trading account with Questrade. Innovation is the core of what we do. We’re constantly creating new ways to lower your costs and give you smarter trading tools, keeping your money where it belongs: in your account.
+			</p>
+
+			<!-- FEATURE LIST -->
+			<ul class="feature-list">
+				<li><i class="icon_lock_alt"></i> Reliable and Secure Platform</li>
+				<li><i class="icon_check_alt2"></i> Swipe, tap, trade.</li>
+				<li><i class="icon_paperclip"></i> Research Tools</li>
+				<li><i class="icon_adjust-vert"></i> Speed and Power</li>
+			</ul>
+
+		</div>
+		<!-- /END RIGHT BRIEF -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
 
 
-			</div><!-- /column -->
-			<!-- End Content Inside -->
-
-		</div><!-- /row -->
-		<!-- End Carousel + Content -->
-
-	</div><!-- /container -->
-</div></section>
-<!-- Features/services section -->
 
 
 
+<!-- =========================
+     BRIEF LEFT SECTION WITH VIDEO
+============================== -->
+<section class="app-brief" id="brief1">
 
+<div class="container">
 
-<!-- Contact section -->
-<section id="contact">
 	<div class="row">
-		<div class="twelve columns">
-			<h3><i class="icon-envelope"></i>Get in contact with us.</h3>
 
-			<!-- Contact form -->
-			<div class="six columns">
-				<form id="contactForm" action="php/contact.php" method="post">
-					<div class="inner">
-						<i class="icon-useralt"></i>
-						<input name="senderName" id="senderName" required="required" type="text" placeholder="Name" />
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="video-container">
+
+                <!--
+				<div class="video">
+
+					<iframe src="//player.vimeo.com/video/88902745?byline=0&amp;portrait=0&amp;color=ffffff" width="600" height="338" frameborder="0" allowfullscreen>
+					</iframe>
+				</div>
+				-->
+
+				<div class="video">
+
+					<iframe width="640" height="360" src="http://www.youtube.com/embed/VjbGg-VuqbU?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- SECTION TITLE -->
+			<h2 class="white-text">How to install and use Phatpen</h2>
+
+			<div class="colored-line-left">
+			</div>
+
+			<p>
+				Follow this step by step video on how to Download and install Phatpen. This video also covers Questrade setup and logins<br/><br/>
+
+			</p>
+
+
+		</div>
+		<!-- /END RIGHT BRIEF -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     SCREENSHOTS
+============================== -->
+<section class="screenshots deep-dark-bg" id="screenshot-section">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<!-- SECTION TITLE -->
+		<h2 class="white-text">Screenshots</h2>
+
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			-
+		</div>
+		<div class="colored-line">
+		</div>
+
+	</div>
+	<!-- /END SECTION HEADER -->
+
+	<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<div id="screenshots" class="owl-carousel owl-theme">
+
+			<div class="shot">
+				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
+			</div>
+
+		</div>
+		<!-- /END SCREENSHOTS -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SCREENSHOTS SECTION -->
+
+
+
+
+
+<!-- =========================
+     DOWNLOAD NOW
+============================== -->
+<section class="download" id="download">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+
+				<!-- DOWNLOAD BUTTONS AREA -->
+				<div class="download-container">
+					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Download Phatpen</h2>
+
+					<!-- BUTTONS -->
+					<div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-google-play"></i>Play Store</a>
+
+					</div>
+					<!-- /END BUTTONS -->
+
+				</div>
+				<!-- END OF DOWNLOAD BUTTONS AREA -->
+
+
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+
+					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Subscribe Now!</h2>
+
+					<!-- =====================
+					     MAILCHIMP FORM STARTS
+					     ===================== -->
+
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+
+						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+
+						<!-- EMAIL INPUT BOX -->
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+
+						<!-- SUBSCRIBE BUTTON -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+
+					</form>
+					<!-- /END MAILCHIMP FORM STARTS -->
+
+					<!-- =====================
+					     LOCAL TXT FORM STARTS
+					     ===================== -->
+
+					<!-- THIS FORM IS COMMENTED TO HIDE
+
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+
+						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+						<h4 class="subscription-error">Something Wrong!</h4>
+
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+
+					</form>
+
+					-->
+
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+
+			</div>
+			<!-- END COLUMN -->
+
+		</div>
+		<!-- END ROW -->
+
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+<!-- =========================
+     FOOTER
+============================== -->
+<footer>
+
+<div class="container">
+
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+
+		<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>
+
+		<!-- EXPANDED CONTACT FORM -->
+		<div class="row expanded-contact-form">
+
+			<div class="col-md-8 col-md-offset-2">
+
+				<!-- FORM -->
+				<form class="contact-form" id="contact" role="form">
+
+					<!-- IF MAIL SENT SUCCESSFULLY -->
+					<h4 class="success">
+						<i class="icon_check"></i> Your message has been sent successfully.
+					</h4>
+
+					<!-- IF MAIL SENDING UNSUCCESSFULL -->
+					<h4 class="error">
+						<i class="icon_error-circle_alt"></i> E-mail must be valid and message must be longer than 1 character.
+					</h4>
+
+					<div class="col-md-6">
+						<input class="form-control input-box" id="name" type="text" name="name" placeholder="Your Name">
 					</div>
 
-					<div class="inner">
-						<i class="icon-envelope"></i>
-						<input type="email" name="senderEmail" id="senderEmail" placeholder="Email address" required="required" />
+					<div class="col-md-6">
+						<input class="form-control input-box" id="email" type="email" name="email" placeholder="Your Email">
 					</div>
 
+					<div class="col-md-12">
+						<input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Subject">
+						<textarea class="form-control textarea-box" id="message" rows="8" placeholder="Message"></textarea>
+					</div>
 
-					<input type="submit" id="sendMessage" name="sendMessage" value="Subscribe for Updates" />
+					<button class="btn btn-primary standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Send Message</button>
+
 				</form>
-				<div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
-				<div id="successMessage" class="successmessage"><p><span class="success-ico"><i class="icon-ok-circle"></i></span> Thanks for sending your message! We'll get back to you shortly.</p></div>
-				<div id="failureMessage" class="errormessage"><p><span class="error-ico"><i class="icon-remove-circle"></i></span> There was a problem sending your message. Please try again.</p></div>
-				<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+				<!-- /END FORM -->
+
 			</div>
 
-			<!-- Contact info -->
-			<div class="vcard">
-				<ul class="contact-info">
-
- <a class="url fn n" href="http://phatpen.com">  <span class="given-name"></span>
-  <span class="additional-name"></span>
-  <span class="family-name"></span>
-</a>
-<div class="org"><b>TTAGIT Social Networks Inc.</b></div>
-<a class="email" href="mailto:cathyforhane@gmail.com">cathyforhane@gmail.com</a>
-<div class="adr">
-<div class="street-address">304 700 Pender St W</div>
-<span class="locality">Vancouver</span>
-,
-<span class="region">BC</span>
-,
-<span class="postal-code">V6C 1G8</span>
-
-<span class="country-name">Canada</span>
-				</ul>
-
-				<ul class="social-info">
-					<li class="f-twitter"><a href="https://twitter.com/Phatpen"><i class="icon-twitter"></i></a></li>
-					<li class="f-fb"><a href="https://www.facebook.com/phatpenfinancial"><i class="icon-facebook"></i></a></li>
-
-				</ul>
-			</div>
 		</div>
-	</div>
-</section>
-<!-- Contact section -->
+		<!-- /END EXPANDED CONTACT FORM -->
 
-<!-- Footer section -->
-<footer class="footer">
-	<div class="row">
-		<div class="twelve columns footer-inner">
-			<p>&copy; 2015. <a href="#">TTAGIT Social Networks</a>. All Rights Reserved.</p>
-		</div>
 	</div>
+	<!-- /END CONTACT BOX -->
+
+	<!-- LOGO -->
+	<img src="images/logo.png" alt="LOGO" class="responsive-img">
+
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href=""><i class="social_facebook_square"></i></a></li>
+		<li><a href=""><i class="social_twitter_square"></i></a></li>
+		<li><a href=""><i class="social_googleplus_square"></i></a></li>
+	</ul>
+
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2015 TTagit Social Networks, All Rights Reserved
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+
 </footer>
-<!-- Footer section -->
+<!-- /END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
